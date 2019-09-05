@@ -1,0 +1,601 @@
+/* сброс стилей браузера */
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1.2;
+}
+
+ol {
+    padding-left: 1.4em;
+    list-style: decimal;
+}
+
+ul {
+    padding-left: 1.4em;
+    list-style: square;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* конец кода сброса стилей браузера */
+@font-face {
+    font-family: Roboto;
+    src: url("fonts/Roboto-Regular.ttf") format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url('fonts/Roboto-RegularItalic.ttf') format('ttf');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url('fonts/Roboto-Bold.ttf') format('ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url('fonts/Roboto-BoldItalic.ttf') format('ttf');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url('fonts/Roboto-Thin.ttf') format('ttf');
+    font-weight: thin;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url('fonts/Roboto-ThinItalic.ttf') format('ttf');
+    font-weight: thin;
+    font-style: italic;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: Roboto;
+}
+
+body {
+    width: 1005px;
+    margin: 0 auto;
+    border: 0.15rem solid #ccc;
+    border-top: 10px solid #f2ac04;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+ 	color: #777;
+}
+
+
+header {
+    display: flex;
+    flex-direction: column;
+    font-family: Tahoma;
+}
+
+.title {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 4.5rem 0 3.5rem;
+    background: url(img/logo.png) no-repeat -1rem 2.2rem;
+}
+
+.logo {
+    font-size: 3.5rem;
+    padding-left: 9.5rem;
+    padding-right: 4rem;
+    color: #555;
+}
+
+.logo1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: lighter;
+    font-size: 2rem;
+    color: #f2ac04;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+}
+
+.logo1~p {
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 1.5rem;
+    margin-bottom: 0.3rem;
+}
+
+.logo~div {
+    border-left: 0.1rem solid #ccc;
+    padding-left: 3rem;
+}
+
+nav {
+    text-transform: uppercase;
+    border-top: 0.1rem solid #b3b3b3;
+    border-bottom: 0.1rem solid #b3b3b3;
+
+}
+
+nav ul, .nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+nav li {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.9rem;
+    margin-right: 7rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+nav li:first-child {
+    margin-left: -1.2rem;
+}
+
+a {
+    text-decoration: none;
+    color: #b3b3b3;
+}
+
+ a:hover {
+    text-decoration: underline;
+    color: #f2ac04;
+    transition: 0.5s;
+}
+
+ a:active {
+    color: black;
+}
+
+h1 {
+    padding-left: 5px;
+    font-weight: 300;
+    margin-top: 3.7rem;
+    text-transform: uppercase;
+    font-family: Tahoma;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+.main {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: -33%;
+
+}
+
+.galery,
+article {
+    width: 49%;
+    height: 0;
+    margin-bottom: 67%;
+}
+
+.carousel {
+    border: .15rem solid #b3b3b3;
+}
+
+figure {
+    margin: .1rem;
+    border: .1rem solid #ccc;
+}
+
+.carousel img {
+    width: 100%;
+
+}
+
+figcaption {
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.galery p {
+    font-family: Tahoma;
+    font-size: 1.9rem;
+    align-self: center;
+    width: 65%;
+
+}
+
+.left a,
+.right a {
+    display: block;
+    width: 5rem;
+    height: 5rem;
+}
+
+.left a {
+    background: url('img/left.png') no-repeat center;
+}
+
+.right a {
+    background: url('img/right.png') no-repeat center;
+}
+
+.big {
+    width: 100%;
+    background: url(img/idol.jpg) no-repeat,
+        url(img/stoun.jpg) no-repeat;
+    background-size: 100%;
+    padding-top: 67%;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+
+}
+
+.big p:first-child {
+    font-size: 2.6rem;
+    font-weight: 300;
+    margin: -54% auto .7rem 2rem;
+}
+
+.big p:nth-child(2) {
+    font-size: 4rem;
+    margin-left: 2rem;
+
+}
+
+.anonse {
+    width: 100%;
+    border-top: 1px solid #555;
+    margin-top: -22%;
+    padding-top: 1.2rem;
+    font-size: 1.4rem;
+    line-height: 1.6em;
+}
+
+.more {
+    display: flex;
+    justify-content: flex-end;
+    font-family: Tahoma;
+    font-size: 1.2rem;
+}
+
+.more p {
+    background-color: #555;
+    height: 1.5rem;
+    text-align: center;
+    padding-bottom: .4rem;
+
+}
+
+.more p:hover {
+    cursor: pointer;
+}
+
+.more p:first-child {
+    width: 4.5rem;
+}
+
+.more p:first-child~p {
+    width: 1.5rem;
+    margin-left: 2px;
+    margin-bottom: 1.5rem;
+}
+
+.more a {
+    text-decoration: none;
+    color: white;
+
+}
+
+.general {
+    font-family: Tahoma;
+    padding-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+    border-top: .1rem solid #b3b3b3;
+}
+
+.general h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-bottom: 4rem;
+}
+
+.contacts h2 {
+    text-transform: none;
+}
+
+.news h2 {
+    margin-bottom: 3rem;
+}
+
+.news,
+.about-us {
+    border-right: .1rem solid #b3b3b3;
+}
+
+.news {
+    width: 33%;
+    padding-right: 1rem;
+}
+
+.about-us {
+    width: 42%;
+    padding: 0 4rem;
+}
+
+.contacts {
+    width: 25%;
+    padding-left: 5rem;
+}
+
+.list {
+    flex-direction: row;
+    border-bottom: 0.15rem dotted #b3b3b3;
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.news div {
+    display: flex;
+}
+
+.news>div {
+    flex-direction: column;
+
+}
+
+.date {
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 50%;
+    border-right: .1rem solid #b3b3b3;
+    padding-right: 1rem;
+    width: 10%;
+}
+
+.day {
+    font-family: 'Raleway', sans-serif;
+    font-weight: lighter;
+    font-size: 1.8rem;
+    color: #f2ac04;
+}
+
+.month {
+    text-transform: uppercase;
+    font-size: .8rem;
+}
+
+.date~div {
+    padding-left: 1rem;
+    flex-direction: column;
+    font-size: 1.2rem;
+}
+
+.date~div b {
+    font-size: 1.6rem;
+}
+
+.about-us>p {
+    font-size: 1.6rem;
+    margin-top: 4rem;
+    line-height: 1.5em;
+    margin-bottom: 2rem;
+    color: #555;
+}
+
+.contacts div {
+    padding-left: 4rem;
+    font-size: 1.3rem;
+    background-size: 10%;
+    opacity: .6;
+    color: #555;
+}
+
+.tel,
+.fax {
+
+    font-weight: bold;
+}
+
+.post ul {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+    line-height: 1.5em;
+}
+
+.tel {
+    background: url('img/phone-outline.png') no-repeat 0 0;
+}
+
+.fax {
+    background: url('img/fax.png') no-repeat 0 0;
+}
+
+.mail {
+    background: url('img/e-mail-envelope.png') no-repeat 0 0;
+}
+
+.post {
+    background: url('img/home.png') no-repeat 0 0;
+}
+
+.clients {
+    font-family: Tahoma;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    border-top: .1rem solid #b3b3b3;
+    border-bottom: .1rem solid #b3b3b3;
+    margin: 7.5rem 0 2rem;
+    padding: 2rem 0 1rem;
+    position: relative;
+}
+
+.clients h3 {
+    font-weight: normal;
+    position: absolute;
+    left: 5rem;
+    top: -10px;
+    width: 10rem;
+    height: 2rem;
+    background-color: white;
+    text-align: center;
+}
+
+.c-logo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    opacity: .6;
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+    color: #555;
+}
+footer .logo {
+    padding-top: 1rem;
+    color: #555;
+    font-weight: bold;
+    font-size: 1.8rem;
+    /*width: 12rem;*/
+    height: 4.5rem;
+    background: url(img/logo.png) no-repeat 3.5rem -.5rem;
+    background-size: 25%;
+    border: none;
+}
+div.nav, div.copyrite {
+    border: none;
+}
+.nav li {
+	display: inline-block;
+	padding: 0 1rem;
+	text-transform: uppercase;
+	border-right: .1rem solid #b3b3b3;
+}
+.nav li:last-child {
+	border-right: none;
+}
+.nav a {
+	color: #555;
+}
+.copyrite {
+	font-size: 1.2rem;
+	line-height: 1.5em;
+}
